@@ -1,0 +1,10 @@
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\bin\Debug\PackageInstallerTests.dll
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\bin\Debug\PackageInstallerTests.pdb
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\bin\Debug\PackageInstaller.exe
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\bin\Debug\PackageInstaller.pdb
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\obj\Debug\PackageInstallerTests.csprojResolveAssemblyReference.cache
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\obj\Debug\PackageInstallerTests.dll
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstallerTests\obj\Debug\PackageInstallerTests.pdb

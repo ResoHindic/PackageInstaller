@@ -1,2 +1,9 @@
 c:\users\resoamana\documents\visual studio 2015\Projects\PackageInstaller\PackageInstaller\bin\Debug\PackageInstaller.exe.config
 C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Debug\PackageInstaller.exe.config
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Debug\PackageInstaller.exe
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Debug\PackageInstaller.pdb
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\obj\Debug\PackageInstaller.csprojResolveAssemblyReference.cache
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\obj\Debug\PackageInstaller.exe
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\obj\Debug\PackageInstaller.pdb
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Debug\Newtonsoft.Json.xml
