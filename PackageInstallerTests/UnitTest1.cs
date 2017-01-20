@@ -1,15 +1,20 @@
 ﻿using System;
+using PackageInstaller;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace PackageInstallerTests
 {
     [TestClass]
-    public class UnitTest1
+    public class InstallerTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidteInputString() 
         {
-            
+            string input = "[ \"Yes: No\", \"No: Maybe\", \"Maybe: \" ]";
+
+            //string result = Program.SeperatePackageVsDependency();
+
+
         }
     }
 }
