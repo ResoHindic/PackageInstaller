@@ -16,7 +16,7 @@ namespace PackageInstaller
             string input;
             string inputText = "";
             List<string> listOfInputCombinations = null;
-
+            
             Console.WriteLine("Please provide the Install List in following format:\n [ \"Package: Dependency\", \"Package2: Dependency2\", \"Package: \" ] \n");
 
             // If user proved text, store it and move on
@@ -35,7 +35,7 @@ namespace PackageInstaller
             }
             catch
             {
-                Console.WriteLine("/n Unable to process the input, please make sure it follows the following format: \n [ \"Package: Dependency\", \"Package2: Dependency2\", \"Package: \" ] \n");
+                Console.WriteLine("\n Unable to process the input, please make sure it follows the following format: \n [ \"Package: Dependency\", \"Package2: Dependency2\", \"Package: \" ] \n");
                 Environment.Exit(1);
             }
 
@@ -43,7 +43,7 @@ namespace PackageInstaller
                         
             if (!result.isValid)
             {
-                Console.WriteLine("/n Unable to determine Install Order, list privided has a loop. \n");
+                Console.WriteLine("\n Unable to determine Install Order, list privided has a loop. \n");
                 Environment.Exit(1);
             }
 

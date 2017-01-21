@@ -9,9 +9,6 @@ namespace PackageInstaller
 {
     public class Helper
     {
-        static List<string> _installedItems;
-        static StringBuilder _installOrder;
-
         /*
          * Main logic on sorting the passed in list.
          * 
@@ -24,8 +21,11 @@ namespace PackageInstaller
          */
         public static InstalOrderResults SeperatePackageVsDependency(List<string> list)
         {
-            _installedItems = new List<string>();
+            List<string> installedItems = new List<string>();
+            StringBuilder builder = new StringBuilder();
+
             int listSize = list.Count();
+            string installResult = "";
 
             for (int loopTimes = 1; loopTimes <= listSize; loopTimes++)
             {
@@ -41,16 +41,23 @@ namespace PackageInstaller
 
                     if (dependency == "")
                     {
-                        BuildFinalInstallResult(package);
-                        _installedItems.Add(package);
+                        if(installResult == "")
+                        {                            
+                            installResult = builder.Append(package).ToString();
+                        }
+                        else
+                        {
+                            installResult = builder.AppendFormat(", {0}", package).ToString();
+                        }                        
+                        installedItems.Add(package);
                         removeFromList.Add(item);
                     }
                     else
                     {
-                        if (_installedItems.Contains(dependency))
+                        if (installedItems.Contains(dependency))
                         {
-                            BuildFinalInstallResult(package);
-                            _installedItems.Add(package);
+                            installResult = builder.AppendFormat(", {0}", package).ToString();
+                            installedItems.Add(package);
                             removeFromList.Add(item);
                         }
                         else
@@ -62,9 +69,9 @@ namespace PackageInstaller
                 list.RemoveAll(x => removeFromList.Contains(x));
             }
 
-            InstalOrderResults result = new InstalOrderResults();
-            result.isValid = CheckIsListsAreSameLenght(listSize, _installedItems);
-            result.installOrder = _installOrder.ToString();
+            InstalOrderResults result;
+            result.isValid = CheckIsListsAreSameLenght(listSize, installedItems);
+            result.installOrder = installResult;
 
             return result;
         }
@@ -86,22 +93,6 @@ namespace PackageInstaller
                 return true;
             }
             return false;
-        }
-
-        /*
-         * Builds a return string and populates a list with values that were added to the return string. 
-         */
-        private static void BuildFinalInstallResult(string item)
-        {
-            if (_installOrder == null)
-            {
-                _installOrder = new StringBuilder();
-                _installOrder.Append(item);
-            }
-            else
-            {
-                _installOrder.AppendFormat(", {0}", item);
-            }
-        }
+        }        
     }
 }

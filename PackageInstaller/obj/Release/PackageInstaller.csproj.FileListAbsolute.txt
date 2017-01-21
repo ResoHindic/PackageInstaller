@@ -1,0 +1,7 @@
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Release\PackageInstaller.exe.config
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Release\PackageInstaller.exe
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Release\PackageInstaller.pdb
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Release\Newtonsoft.Json.dll
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\bin\Release\Newtonsoft.Json.xml
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\obj\Release\PackageInstaller.exe
+C:\Users\ResoAmana\Source\Repos\PackageInstaller\PackageInstaller\obj\Release\PackageInstaller.pdb
